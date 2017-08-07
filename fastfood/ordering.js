@@ -5,3 +5,8 @@ var Meal = (function () {
     }
     return Meal;
 }());
+function order(meal) {
+    return "I want " + meal.total + " " + meal.food;
+}
+var myMeal = new Meal("hamburger", 3);
+document.body.innerHTML = order(myMeal);
